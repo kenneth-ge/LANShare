@@ -1,0 +1,10 @@
+/*Raised button example */
+.jfx-button {
+     -jfx-button-type: RAISED;
+     -fx-background-color: #fc5858;
+     -jfx-disable-visual-focus: false;
+     -fx-width: 150%;
+     -fx-height: 150%;
+     -fx-pref-width: 173;
+     -fx-pref-height: 56;
+}

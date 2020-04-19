@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <JFXDrawer id="drawer" prefHeight="400.0" prefWidth="130.0" style="-fx-background-color: rgb(225,226,225);">
+         <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton onAction="#about" prefHeight="182.0" prefWidth="170.0" style="-fx-background-color: #fc5858;" text="About" GridPane.rowIndex="5" />
+                  <JFXButton onAction="#info" prefHeight="152.0" prefWidth="173.0" style="-fx-background-color: #fc5858;" text="Info" GridPane.rowIndex="4" />
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="LANShare" textAlignment="CENTER" wrappingWidth="130.0">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </JFXDrawer>
+      <AnchorPane layoutX="130.0" prefHeight="407.0" prefWidth="477.0" fx:id="content" >
+         <children>
+            <JFXButton layoutX="195.0" layoutY="95.0" onAction="#send" prefHeight="56.0" prefWidth="173.0" style="-fx-background-color: #fc5858;" text="Send Files" />
+            <JFXButton layoutX="195.0" layoutY="220.0" onAction="#receive" prefHeight="56.0" prefWidth="173.0" style="-fx-background-color: #fc5858;" text="Receive Files" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

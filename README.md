@@ -11,5 +11,7 @@ Enter, LANShare:
 
 Local area network file sharing program LANShare, using UDP broadcasting and TCP. Written in JavaFX (& rewritten in Qt, although not in this repo)
 
+Much faster and more energy-efficient than uploading and redownloading, doesn't require any additional hardware, doesn't even require a USB port for a flash drive!
+
 ## Mac commands:
 Run the following command, replacing `/path/to/application.app` with the actual path to the downloaded application file: `xattr -cr /path/to/application.app`
